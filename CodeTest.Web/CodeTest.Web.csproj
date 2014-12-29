@@ -312,11 +312,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CodeTest.Data\CodeTest.Data.csproj">
-      <Project>{a3a0bf21-4de1-4c5e-95d6-020a4af650cc}</Project>
+      <Project>{896c36a9-5a8c-4927-bb7d-db787d97ea1c}</Project>
       <Name>CodeTest.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\CodeTest.Model\CodeTest.Model.csproj">
-      <Project>{05be84af-e938-43b9-b943-3975e89515ed}</Project>
+      <Project>{ea5bd123-dc5e-4298-a7bb-2f1aa1dd9086}</Project>
       <Name>CodeTest.Model</Name>
     </ProjectReference>
   </ItemGroup>
