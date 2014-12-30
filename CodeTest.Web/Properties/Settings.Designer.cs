@@ -27,9 +27,9 @@ namespace CodeTest.Web.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\Projects;Initial Catalog=CodeTest;Integrated Security=True")]
-        public string Setting {
+        public string CodeTest {
             get {
-                return ((string)(this["Setting"]));
+                return ((string)(this["CodeTest"]));
             }
         }
     }
