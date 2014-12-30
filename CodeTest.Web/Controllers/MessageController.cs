@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Mvc;
 
 namespace CodeTest.Web.Api.Controllers
@@ -29,8 +30,9 @@ namespace CodeTest.Web.Api.Controllers
             return Uow.Messages.GetById(id);
         }
 
-        //PUT api/message
-        public HttpResponseMessage Put(Message message)
+        //PUT api/message        
+        [EnableCors("*", "*", "*")]        
+        public HttpResponseMessage Post(Message message)
         {
             Uow.Messages.Add(message);
             Uow.Commit();
