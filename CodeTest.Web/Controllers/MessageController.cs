@@ -45,9 +45,8 @@ namespace CodeTest.Web.Mvc.Controllers
 {
     public class MessageController : MvcControllerBase
     {
-        public MessageController(ICodeTestUow uow)
+        public MessageController()
         {
-            Uow = uow;
         }
 
         //GET message/index

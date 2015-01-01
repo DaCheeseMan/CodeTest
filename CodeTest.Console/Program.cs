@@ -13,13 +13,12 @@ namespace CodeTest.Console
     class Program
     {
         private const string BASEADDRESS = "http://localhost:58554/";
+        private static string _message;
 
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Getting all messages...");
-            Task t1 = new Task(GetMessages);
-            t1.Start();
-            t1.Wait(5000);
+            System.Console.Write("Type a message: ");
+             _message = System.Console.ReadLine();
 
             System.Console.WriteLine("Posting a new message...");
             Task t2 = new Task(SendMessage);
@@ -61,7 +60,7 @@ namespace CodeTest.Console
 
                 var message = new Message()
                 {
-                    Text = "Hello World!",
+                    Text = _message,
                     Owner = new Person()
                     {
                         FirstName = "Andreas",
